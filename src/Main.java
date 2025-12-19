@@ -8,7 +8,7 @@ public class Main
         int x;
         Sign sign1 = new Sign("ABC222DE", 3);
         x = sign1.numberOfLines();
-//        str = sign1.getLines();
+        str = sign1.getLines();
 //        str = sign1.getLines();
         Sign sign2 = new Sign("ABCD", 10);
         x = sign2.numberOfLines();

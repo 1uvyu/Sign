@@ -24,6 +24,12 @@ public class Sign
 
     public String getLines()
     {
+        if (message.length() > 0)
+        {
+            String str = message.substring(0, width);
+            str += ";";
+            return str;
+        }
         return null;
     }
 }
