@@ -27,8 +27,11 @@ public class Sign
         if (message.length() > 0)
         {
             String str = message.substring(0, width);
-            str += ";";
-            return str;
+            for (int i = 0; i < message/width; i++)
+            {
+                str += ";";
+                return str;
+            }
         }
         return null;
     }
