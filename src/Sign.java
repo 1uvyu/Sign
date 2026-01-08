@@ -36,6 +36,10 @@ public class Sign
             {
                 str += message.substring(width * (message.length()/width));
             }
+            else
+            {
+                str = str.substring(0, str.length() - 1);
+            }
             return str;
         }
         return null;
