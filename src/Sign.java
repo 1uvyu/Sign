@@ -24,14 +24,19 @@ public class Sign
 
     public String getLines()
     {
+        if (width >= message.length()) return message;
         if (message.length() > 0)
         {
-            String str = message.substring(0, width);
-            for (int i = 0; i < message/width; i++)
+            String str = "";
+            for(int i = 0; i < message.length()/width; i++)
             {
-                str += ";";
-                return str;
+                str += message.substring(width * i, width * i + width) + ";";
             }
+            if (!(message.length() % width == 0))
+            {
+                str += message.substring(width * (message.length()/width));
+            }
+            return str;
         }
         return null;
     }
