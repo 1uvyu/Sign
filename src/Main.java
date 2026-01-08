@@ -36,9 +36,5 @@ public class Main
         str = sign5.getLines();
         System.out.println(x);
         System.out.println(str);
-
-//        Sign a = new Sign("Everything on sale, please come in", 15);
-//        Sign b = new Sign("Everything on sale, please come in", 17);
-//        Sign c = new Sign("Everything on sale, please come in", 40);
     }
 }

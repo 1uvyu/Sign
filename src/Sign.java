@@ -45,4 +45,3 @@ public class Sign
         return null;
     }
 }
-// message.substring(0, width);
